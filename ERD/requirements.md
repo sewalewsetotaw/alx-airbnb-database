@@ -9,7 +9,7 @@ ER Diagrams are visual representations of the entities (tables) in a database an
 - **Attributes:** Properties of entities (e.g., `User ID`, `Payment Date`, `Price`)
 - **Relationships:** Connections between entities (e.g., a `User` makes a `Booking`, a `Booking` includes a `Payment`)
 
-![ER Diagram](./ERD/AirBnb_ER_Diagram.drawio.png)
+![ER Diagram](./AirBnb_ER_Diagram.drawio.png)
 
 ---
 
