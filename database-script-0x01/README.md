@@ -24,7 +24,7 @@ Ensure PostgreSQL is installed and properly configured on your system.
 1. Open your terminal (or pgAdmin)
 2. Create a new database
 
-   `CREATE DATABASE airbnb_database`
+   CREATE DATABASE airbnb_database
 
 You can run this inside a PostgreSQL session (via psql) or in pgAdmin’s Query Tool.
 
@@ -36,7 +36,7 @@ Ensure PostgreSQL’s bin directory is in your PATH (e.g., C:\Program Files\Post
 
 Run the following command:
 
-    ```psql -U postgres -d airbnb_database -f "C:\path\to\schema.sql"```
+    psql -U postgres -d airbnb_database -f "C:\path\to\schema.sql"
 
 Replace "C:\path\to\schema.sql" with the actual full path to your file.
 
@@ -45,7 +45,7 @@ Open your Terminal.
 
 Run:
 
-    ```psql -U postgres -d airbnb_database -f /full/path/to/schema.sql```
+    psql -U postgres -d airbnb_database -f /full/path/to/schema.sql
 
 You may be prompted for your PostgreSQL password.
 
