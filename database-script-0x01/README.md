@@ -22,6 +22,7 @@ Ensure PostgreSQL is installed and properly configured on your system.
 🔹 Step-by-Step Instructions
 
 1. Open your terminal (or pgAdmin)
+
 2. Create a new database
 
    CREATE DATABASE airbnb_database
