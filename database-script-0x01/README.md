@@ -21,16 +21,18 @@ Ensure PostgreSQL is installed and properly configured on your system.
 
 🔹 Step-by-Step Instructions
 
-1. Open your terminal (or pgAdmin)
+1.  Open your terminal (or pgAdmin)
 
-2. Create a new database
+2.  Create a new database:
 
-   CREATE DATABASE airbnb_database
+            CREATE DATABASE airbnb_database
 
 You can run this inside a PostgreSQL session (via psql) or in pgAdmin’s Query Tool.
 
 🔹 Option 1: Command Line / Terminal (Recommended)
+
 👉 On Windows:
+
 Open Command Prompt or PowerShell.
 
 Ensure PostgreSQL’s bin directory is in your PATH (e.g., C:\Program Files\PostgreSQL\15\bin).
