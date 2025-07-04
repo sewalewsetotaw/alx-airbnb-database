@@ -69,3 +69,54 @@ A **correlated subquery** is evaluated for each row processed by the outer query
 Correlated subqueries are useful when row-by-row comparison or filtering is needed based on related data.
 
 ---
+
+## 📚 Understanding SQL Aggregation and Window Functions
+
+This section explains the key SQL functions and clauses used in this task to analyze data from the Airbnb Database.
+
+---
+
+### 🔢 COUNT()
+
+The `COUNT()` function is an **aggregate function** that returns the number of rows matching a specific condition or within a group.
+
+- `COUNT(column_name)` or `COUNT(*)`
+- Useful for counting bookings, users, reviews, etc.
+
+---
+
+### 📦 GROUP BY
+
+The `GROUP BY` clause groups rows that have the same values in specified columns into summary rows.
+
+- Often used with aggregate functions like `COUNT()`, `SUM()`, `AVG()`, etc.
+- Groups the data based on a column (e.g., by user or by property).
+
+---
+
+### 🔃 ORDER BY
+
+The `ORDER BY` clause sorts the result set by one or more columns.
+
+- Can sort in **ascending** (`ASC`) or **descending** (`DESC`) order.
+- Used in combination with `GROUP BY` or window functions to rank or sort output.
+
+---
+
+### 🪟 ROW_NUMBER()
+
+`ROW_NUMBER()` is a **window function** that assigns a unique, sequential number to each row within a partition of the result set.
+
+- Numbers rows in the order specified by `ORDER BY`.
+- No ties — each row gets a distinct number.
+
+---
+
+### 🏅 RANK()
+
+`RANK()` is also a **window function** that assigns a rank to each row within a partition based on an ordering condition.
+
+- Rows with **equal values** receive the **same rank**.
+- The next rank is skipped accordingly (i.e., not sequential if there are ties).
+
+---
