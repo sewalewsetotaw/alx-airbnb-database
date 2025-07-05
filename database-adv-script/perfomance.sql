@@ -1,3 +1,4 @@
+ EXPLAIN
  SELECT b.booking_id,
        b.start_date,
        b.end_date,
@@ -22,7 +23,8 @@ FROM   booking b
        LEFT JOIN payment p2
               ON b.booking_id = p2.booking_id  
 
---Refactor the query--
+--Refactored Query (Optimized)
+EXPLAIN
  SELECT b.booking_id,
        b.start_date,
        b.end_date,
@@ -46,7 +48,7 @@ FROM   booking b
               ON b.property_id = p.property_id
        LEFT JOIN payment p2
               ON b.booking_id = p2.booking_id  
-
+        WHERE b.status = 'confirmed' AND u.email IS NOT NULL;
 
 CREATE INDEX IF NOT EXISTS  index_payment_booking_id on payment(booking_id)
 
