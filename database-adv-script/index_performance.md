@@ -37,42 +37,40 @@ Enhance query speed and efficiency by creating indexes on high-usage columns and
 
 **Before Index:**
 
-```sql
-Hash Join
-  Seq Scan on User
-  Seq Scan on Booking
+    Hash Join
+    Seq Scan on User
+    Seq Scan on Booking
 
-After Index:
+**After Index:**
 
-Nested Loop
-  Index Scan on booking (index_booking_user_id)
-  Index Scan on user (User_pkey)
+    Nested Loop
+    Index Scan on booking (index_booking_user_id)
+    Index Scan on user (User_pkey)
 
-🔹 Query 2: Booking JOIN Property
+### 🔹 Query 2: Booking JOIN Property
 
-Before Index:
+**Before Index:**:
 
-Hash Join
-  Seq Scan on Booking
-  Seq Scan on Property
+    Hash Join
+    Seq Scan on Booking
+    Seq Scan on Property
 
-After Index:
+**After Index:**
 
-Merge Join
-  Index Scan on booking (index_booking_property_id)
-  Index Only Scan on property (property_pkey)
+    Merge Join
+    Index Scan on booking (index_booking_property_id)
+    Index Only Scan on property (property_pkey)
 
-🔹 Query 3: User JOIN Property (as host)
+### 🔹 Query 3: User JOIN Property (as host)
 
-Before Index:
+**Before Index:**:
 
-Hash Join
-  Seq Scan on User
-  Seq Scan on Property
+    Hash Join
+    Seq Scan on User
+    Seq Scan on Property
 
-After Index:
+**After Index:**
 
-Nested Loop
-  Index Scan on property (index_property_host_id)
-  Index Scan on user (User_pkey)
-```
+    Nested Loop
+    Index Scan on property (index_property_host_id)
+    Index Scan on user (User_pkey)
