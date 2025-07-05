@@ -61,15 +61,15 @@ INSERT INTO Booking (property_id, user_id, start_date, end_date, total_price, st
 -- Insert Payment
 
 INSERT INTO Payment (booking_id, amount, payment_date, payment_method) VALUES
-('543c626f-bf8c-46a8-9ec6-6c4afaa08c13', 200.00, '2025-07-03', 'paypal'),
-('d91c500b-7dc2-4e2e-a5c1-5fc21372e040', 900.00, '2025-07-07', 'credit_card'),
-('5a3646a3-6e27-4e89-9313-e3b97ad248b8', 180.00, '2025-07-12', 'stripe'),
-('020373d3-f121-4373-a2d2-d46a1c52a19c', 600.00, '2025-07-18', 'paypal'),
-('7e33ab9b-d6f3-46db-a94d-d5a13857273f', 1500.00, '2025-07-25', 'stripe'),
-('9182d91b-0318-46f6-9b5b-5916fcebd5bb', 400.00, '2025-07-03', 'credit_card'),
-('1d32f99a-3e2f-435f-8673-53503d1eeead', 350.00, '2025-07-09', 'stripe'),
-('bc3e7f9f-c462-4560-91a8-f98ecc03ac2c', 390.00, '2025-07-13', 'paypal'),
-('afa11dba-2aaf-466b-bb4f-8ba25c212db6', 600.00, '2025-07-17', 'credit_card');
+('e634c0fd-b9e0-4123-b39a-3f420d3bf2f6', 200.00, '2025-07-03', 'paypal'),
+('c932bdd2-1e5e-4f43-a922-571a4adaeadb', 900.00, '2025-07-07', 'credit_card'),
+('0d94fe0b-6ea2-43ec-b0e8-4f8a58a6902a', 180.00, '2025-07-12', 'stripe'),
+('34a5860c-60bc-44c5-b624-b3a8fc0ae273', 600.00, '2025-07-18', 'paypal'),
+('0afd9c63-d436-4bee-9fbb-a18f6ac6b84b', 1500.00, '2025-07-25', 'stripe'),
+('7af3b349-b835-42fb-add0-ac74dbea754c', 400.00, '2025-07-03', 'credit_card'),
+('50cfcd3d-f10a-4dc9-b64e-5d2192dc6c64', 350.00, '2025-07-09', 'stripe'),
+('a55545b8-8b7e-4f03-80e8-f4081bf8d411', 390.00, '2025-07-13', 'paypal'),
+('92b0774a-b46e-47eb-9fc4-f27dbd6b73ed', 600.00, '2025-07-17', 'credit_card');
 
 -- Insert Review
 
@@ -98,7 +98,3 @@ INSERT INTO Message (sender_id, recipient_id, message_body) VALUES
 ('5b24c870-2f5b-49f8-bd0e-6ad51b12a63d', 'e492ed78-cf70-4e3c-9903-867081e4cdda', 'What is your cancellation policy?'),
 ('f5aced3b-a511-4882-80f3-61ad8ca5c7b8', '20ee9a82-bcdb-42b9-b63e-8cd9ac1ee86b', 'Can I check in early?'),
 ('7a3cdd9b-7f37-4be4-aeb0-b7ca559dbee2', '5ae896ab-1b5b-474b-9ee7-27b0b0be5252', 'Do you have AC?');
-
-
-
-
