@@ -1,11 +1,11 @@
     -- Measure query performance before adding indexes
-    EXPLAIN SELECT
+    EXPLAIN ANALYZE SELECT
     u.user_id, u.first_name, u.last_name, b.booking_id, b.start_date, b.status FROM "User" u JOIN booking b ON u.user_id =b.user_id  
     
-    EXPLAIN select
+    EXPLAIN ANALYZE select
     b.booking_id,b.property_id,b.user_id,b.start_date,b.status FROM booking b join property p on b.property_id =p.property_id
     
-    EXPLAIN SELECT
+    EXPLAIN ANALYZE SELECT
     u.user_id,u.first_name,u.last_name,p."name" property_name,p.description FROM "User" u join property p on u.user_id =p.host_id 
 
     -- Creating index for Booking and Property table 
@@ -29,11 +29,11 @@
     -- so no need to create additional ones manually.
 
         -- Measure query performance after adding indexes
-    EXPLAIN SELECT
+    EXPLAIN ANALYZE SELECT
     u.user_id, u.first_name, u.last_name, b.booking_id, b.start_date, b.status FROM "User" u JOIN booking b ON u.user_id =b.user_id  
     
-    EXPLAIN select
+    EXPLAIN ANALYZE select
     b.booking_id,b.property_id,b.user_id,b.start_date,b.status FROM booking b join property p on b.property_id =p.property_id
     
-    EXPLAIN SELECT
+    EXPLAIN ANALYZE SELECT
     u.user_id,u.first_name,u.last_name,p."name" property_name,p.description FROM "User" u join property p on u.user_id =p.host_id 
